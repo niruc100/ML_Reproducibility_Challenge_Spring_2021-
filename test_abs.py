@@ -15,7 +15,7 @@ def test_abs(n_test,n_batch,n_steps,alpha,u,x_test):
     x_test = np.expand_dims(x_test, axis=3)
     _, height, width, nc = x_test.shape
 
-    device_id = 1
+    device_id = 0
     torch.cuda.set_device(device_id)
 
     #zeropad = nn.ZeroPad2d(height//4) # 2 times oversampling

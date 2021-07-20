@@ -10,7 +10,7 @@ from dataset import *
 
 
 def train_abs(n_epoch,n_train,n_batch,alpha,lr_u,n_steps,U_range,dataset,x_train):
-    device_id = 1
+    device_id = 0
     torch.cuda.set_device(device_id)
     #print('changed')
     
